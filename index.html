@@ -9,6 +9,7 @@
     <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet" />
     <script src="https://unpkg.com/intersection-observer@0.12.0/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
@@ -249,6 +250,30 @@
             touch-action: unset;
         }
 
+        #chartContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100vw; /* Full width */
+        height: 25vh;
+        max-width: 100%; /* Limit maximum width to viewport width */
+        height: 25vh; /* Adjust based on your needs */
+        background-color: #fff;
+        z-index: 130;
+    }
+
+    /* Media query for smaller screens like desktops */
+        @media (max-width: 1024px) {
+            #chartContainer {
+                height: 20vh; /* Smaller height for desktop screens */
+            }
+        }
+
+
+
         </style>
 </head>
 <body>
@@ -258,6 +283,9 @@
 <div id="imageOverlay">
     <img id="fullscreenImage" src="blank.png" >
 </div>
+<div id="chartContainer" style="display: none; ">
+    <canvas id="chartCanvas"></canvas>
+</div>
 <div id="timeline-container">
     <div id="timeline-bar-filled"></div> <!-- Filled portion of the bar -->
     <div id="timeline-bar-unfilled"></div> <!-- Unfilled portion of the bar -->
@@ -266,6 +294,7 @@
 </div>
 <div id="mapInset"></div>
 <div id="story"></div>
+
 
 <script src="./config.js"></script>
 <script>
@@ -394,7 +423,7 @@ const transformRequest = (url) => {
     const hasQuery = url.indexOf("?") !== -1;
     const suffix = hasQuery ? "&pluginName=scrollytellingV2" : "?pluginName=scrollytellingV2";
     return {
-      url: url + suffix
+    url: url + suffix
     }
 }
 
@@ -528,6 +557,9 @@ map.on("load", function() {
         });
     }
 
+
+
+
     // Handling fullscreen overlay image
     const imageOverlayDiv = document.getElementById('imageOverlay');
     const fullscreenImage = document.getElementById('fullscreenImage');
@@ -554,7 +586,7 @@ map.on("load", function() {
     var totalDays = 792; // Total span of days from start to present
 
     // Calculate the percentage of the timeline filled based on daysAgo
-    var positionPercent = (daysAgo / totalDays) * 100;
+    var positionPercent = ((totalDays - daysAgo) / totalDays) * 100;
 
     // Update pointer position
     var pointer = document.getElementById('timeline-pointer');
@@ -578,8 +610,39 @@ map.on("load", function() {
     } else {
         label.style.right = "unset";
     }
+
+
+    // Show or hide the chart container based on chapter data
+    var chartContainer = document.getElementById('chartContainer');
+    if (chapter.chartData) {
+        chartContainer.style.display = 'block'; // Show the chart container
+        updateOrCreateChart(chapter);
+    } else {
+        chartContainer.style.display = 'none';
+        }
+
+        
     
-});
+})
+
+.onStepExit(response => {
+    var chapter = config.chapters.find(chap => chap.id === response.element.id);
+    response.element.classList.remove('active');
+    if (chapter.onChapterExit.length > 0) {
+        chapter.onChapterExit.forEach(setLayerOpacity);
+    }
+
+    // Hide the chart container when exiting the first chapter and scrolling up
+    // or for any chapter, indicating the user is moving back to the start of the story
+    if ((response.index === 0 && response.direction === 'up') || response.direction === 'up') {
+        document.getElementById('chartContainer').style.display = 'none';}
+
+
+
+                });
+                if (config.auto) {
+            document.querySelectorAll('[data-scrollama-index="0"]')[0].scrollIntoView();
+        }
 
 });
 
@@ -666,6 +729,97 @@ function updateInsetLayer(bounds) {
 }
 
 
+// Chart.js global instance
+var chartInstance;
+
+// Function to update or create chart
+function updateOrCreateChart(chapter) {
+var chartContainer = document.getElementById('chartCanvas').getContext('2d');
+var chartData = chapter.chartData;
+
+var data = {
+    labels: chartData.labels,
+    datasets: [{
+        label: chartData.label,
+        data: chartData.dataPoints,
+        backgroundColor: 'rgba(176, 30, 35, 0.2)',
+        borderColor: 'rgba(176, 30, 35, 1)',
+        fill: true,
+    }]
+};
+
+var options = {
+animation: false,
+responsive: true, // Make the chart responsive
+maintainAspectRatio: false, // Allow the chart to fill the entire container
+aspectRatio: 2, // Adjust the aspect ratio based on your preference
+plugins: {
+    legend: {
+        display: false,
+    },
+    title: {
+        display: true,
+        text: chapter.chartTitle // Dynamically set the chart title
+    }
+},
+scales: {
+    y: {
+        min: chapter.yAxisMin,
+        max: chapter.yAxisMax,
+        title: {
+            display: true,
+            text: 'Value'
+        }
+    },
+    x: {
+        title: {
+            display: true,
+            text: 'Category'
+        }
+    }
+},
+tooltips: {
+    enabled: true, // Enable tooltips
+    mode: 'index',
+    intersect: false,
+},
+hover: {
+    mode: 'nearest',
+    intersect: true
+    },
+};
+
+if (chartInstance) {
+    chartInstance.data = data;
+    chartInstance.options = options;
+    chartInstance.update();
+} else {
+    chartInstance = new Chart(chartContainer, {
+        type: 'line',
+        data: data,
+        options: options
+        });
+    }
+
+    // Hide specific values if configured
+    if (chapter.hiddenValues) {
+        hideValues(chapter.hiddenValues);
+    }
+}
+
+// Function to hide specific values on the chart
+function hideValues(hiddenValues) {
+    hiddenValues.forEach(value => {
+        var index = chartInstance.data.labels.indexOf(value);
+        if (index !== -1) {
+            chartInstance.data.datasets[0].data[index] = null;
+        }
+    });
+    chartInstance.update();
+}
+
+
+
 function adjustImageForAspectRatio() {
             const image = document.getElementById('fullscreenImage');
             if (!image) return; // Exit if the image isn't found
@@ -697,6 +851,8 @@ function adjustImageForAspectRatio() {
 
         // Here, you would also initialize your map and any other setup that needs to happen on page load
     });
+
+    
 
 
 // setup resize event
