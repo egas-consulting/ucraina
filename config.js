@@ -1396,39 +1396,7 @@ var config = {
                 // }
             ]
         },
-        {
-            id: 'cap23',
-            daysAgo: 430,
-            showTimeline: false,
-            alignment: 'center',
-            hidden: true,
-            title: '', // Consider adding a title if needed
-            image: '', // Specify if there's a header image for the chapter
-            description: 'De exemplu, moleculele de oxid de sulf, cu un timp de rezidență de aproximativ două zile și la o viteză a vântului de 10 m/s, pot călători până la 2.000 km, reflectând capacitatea lor de a influența mediul pe distanțe considerabile, cu implicații serioase pentru calitatea aerului, sănătatea umană și ecosisteme.',
-            overlayImage: 'poluareaer.png',
-            location: {
-                center: [12.02595, 49.90885],
-                zoom: 1,
-                pitch: 60,
-                bearing: 0,
-            },
-            mapAnimation: 'jumpTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
-            ],
-            onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
-            ]
-        },
+        
 
         {
             id: 'cap24',
@@ -1539,8 +1507,42 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'După explozii, fragmentele de metal și substanțele chimice persistă în sol, unele răspândindu-se pe o rază de <a href="https://uncg.org.ua/iakoiu-maie-buty-dolia-poshkodzhenykh-vybukhamy-ukrainskykh-terytorij/" style="color:#B01E23">până la 35 de metri.</a> Zilnic, mii de obuze, care pot elibera între 1,6 și 3,5 kg de fragmente toxice fiecare, sunt folosite în zonele de conflict. Astfel, peste 651 kg de fragmente toxice se infiltrează zilnic în sol, provenind din carcase de muniție care includ, pe lângă alte elemente, sulf și cupru – metale cu potențial toxic semnificativ. ',
-            overlayImage: 'generalss.png',
+            description: 'După explozii, fragmentele de metal și substanțele chimice persistă în sol, unele răspândindu-se pe o rază de <a href="https://uncg.org.ua/iakoiu-maie-buty-dolia-poshkodzhenykh-vybukhamy-ukrainskykh-terytorij/" style="color:#B01E23">până la 35 de metri.</a> ',
+            overlayImage: 'diameter.gif',
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 1,
+                pitch: 60,
+                bearing: 0,
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+
+        {
+            id: 'cap27.1',
+            daysAgo: 430,
+            showTimeline: false,
+            alignment: 'center',
+            hidden: false,
+            title: '', // Consider adding a title if needed
+            image: '', // Specify if there's a header image for the chapter
+            description: 'Zilnic, mii de obuze, care pot elibera între 1,6 și 3,5 kg de fragmente toxice fiecare, sunt folosite în zonele de conflict. Astfel, peste 651 kg de fragmente toxice se infiltrează zilnic în sol, provenind din carcase de muniție care includ, pe lângă alte elemente, sulf și cupru – metale cu potențial toxic semnificativ. ',
+            overlayImage: 'fragmente.gif',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 1,
