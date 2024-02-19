@@ -10,7 +10,7 @@ var config = {
     theme: 'light',
     use3dTerrain: false, //set true for enabling 3D maps.
     auto: false,
-    title: '<span style="font-family:\'Signika\'; font-weight: 200; padding: 0.2vh; border-radius: 10px; color: #000000; font-size: 1.7rem; display: block; margin-bottom: 2px;">Marile răni ale Ucrainei</span>',
+    title: '<span style="font-family:\'Signika\'; font-weight: 200; padding: 0.2vh; border-radius: 10px; color: #000000; font-size: 1.7rem; display: block; margin-bottom: 2px;">Marile răni ale Ucrainei,</span>',
     subtitle: '<span style="font-family: \'Signika\'; color: #000000; font-size: 2.6rem; font-weight: 500;"> DUPĂ DOI ANI DE <span style="font-weight: bold; animation: colorFade 6s infinite;">RĂZBOI</span> ÎN UCRAINA </span>',
 
     byline: '<p style="text-align: center;"> <img src="./ukraine.gif"></p> <a href="https://panorama.ro/author/edit/" target="_blank">Edit Gyenge</a> <p> <img src="./scroll.png"> </p> <p> scroll </p> ',
@@ -24,7 +24,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Rusia a invadat Ucraina în urmă cu <b style="color: #B01E23;">doi ani</b> în zorii unei zile reci de februarie, când marile puteri aliate din Vest trăgeau toate semnalele de alarmă că Vladimir Putin va da ordinul de război, însă toată lumea spera că blufează. De atunci, trăim cu război în Europa. Un război care ne afectează pe toți și care a lăsat urme adânci nu doar în structura socială și economică a regiunii, ci și asupra mediului înconjurător.',
+            description: 'Rusia a invadat Ucraina în urmă cu <b style="color: #B01E23;">doi ani</b>, în zorii unei zile reci de februarie, când marile puteri aliate din Vest trăgeau toate semnalele de alarmă că Vladimir Putin va da ordinul de război, însă toată lumea spera că blufează. De atunci, trăim cu război în Europa. Un război care ne afectează pe toți și care a lăsat urme adânci nu doar în structura socială și economică a regiunii, ci și asupra mediului înconjurător.',
             overlayImage: 'blank.png',
             
             location: {
@@ -52,6 +52,44 @@ var config = {
         },
 
         {
+            id: 'cap1.1',
+            daysAgo: 430,
+            showTimeline: false,
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: '',
+            description: 'Războiul a schimbat destinele a milioane de ucraineni, care fie au fugit unde au putut, fie au îndurat greutățile de acasă. Nu doar realitățile economice ale vieții din Ucraina s-au răsturnat peste noapte. Războiul a  scos la iveală și cât de fragilă e natura în fața conflictelor armate: apa, aerul și solul sunt otrăvite.',
+            overlayImage: 'blank.png',
+            
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 15,
+                pitch: 60,
+                bearing: 0,
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+
+
+
+
+        {
             id: 'cap6',
             daysAgo: 730,
             showTimeline: true,
@@ -60,7 +98,7 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: '<b style="color: #B01E23;">Ziua de 24 februarie, 2022</b> marchează începutul războiului. Deși toate semnele și avertismentele erau acolo, cei mai mulți, inclusiv ucraineni, ne spuneam: n-are cum. Pe hartă, apar ciocnirile armate de la începutul invaziei rusești până astăzi. Dimensiunea cercului reprezintă numărul de decese/zonă de conflict. <p><img src="legenda.png" alt="Legend" style="max-width: 50%; height: auto;"></p> ',
+            description: '<b style="color: #B01E23;">Ziua de 24 februarie 2022</b> marchează începutul războiului. Deși toate semnele și avertismentele erau acolo, cei mai mulți, inclusiv ucraineni, ne spuneam: n-are cum. Pe hartă, apar ciocnirile armate de la începutul invaziei rusești până astăzi. Dimensiunea cercului reprezintă numărul de decese/zonă de conflict. <p><img src="legenda.png" alt="Legend" style="max-width: 50%; height: auto;"></p> ',
             
             location: {
                 center: [31.2718321, 49.4871968],
@@ -445,7 +483,7 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Foamea e un indicator cât se poate de bază pentru viața unui om. Înainte de izbucnirea războiului, lipsa siguranței alimentare, măsurată în procentul celor care au declarat că sunt forțați să-și economisească mâncarea, pentru a le ajunge pentru o perioadă mai lungă, era <b style="color: #B01E23;">între 10 și 15%</b> în Ucraina',
+            description: 'Foamea e un indicator cât se poate de bază pentru viața unui om. Înainte de izbucnirea războiului, lipsa siguranței alimentare, măsurată în procentul celor care au declarat că sunt forțați să-și economisească mâncarea, pentru a le ajunge pentru o perioadă mai lungă, era <b style="color: #B01E23;">între 10 și 15%</b> în Ucraina.',
             overlayImage: 'social.png',
             
             location: {
@@ -580,7 +618,7 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'În primul an de război, toate s-au scumpit. Indicele prețurilor de consum a crescut semnificativ. Mai multe cauze au dus la creșterea prețurilor: perturbări în lanțurile de aprovizionare, scăderea producției interne și creșterea costurilor pentru importuri. Inflația a afectat în mod direct buzunarele ucrainenilor, mărind prețul bunurilor de bază și erodând puterea de cumpărare. Această situație a pus presiune suplimentară pe gospodării: nu doar că mulți nu aveau destulă mâncare, dar mai era și scumpă.',
+            description: 'În primul an de război, toate s-au scumpit. Indicele prețurilor de consum a crescut semnificativ, din cauza perturbărilor în lanțurile de aprovizionare, scăderii producției interne și scumpirii importurilor. Inflația a lovit în buzunarele ucrainenilor, mărind prețul bunurilor de bază și erodând puterea de cumpărare. Această situație a pus presiune suplimentară pe gospodării: nu doar că mulți nu aveau destulă mâncare, dar mai era și scumpă.',
             overlayImage: 'people.gif',
             
             location: {
@@ -662,7 +700,7 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Exploziile și distrugerile provocate infrastructurii industriale eliberează substanțe chimice periculoase și particule fine în aer, sol și surse de apă. Ucrainenii sunt în pericol de a dezvolta probleme respiratorii, afecțiuni cutanate și alte boli grave pe termen lung. Și nu doar ei. Afectate vor fi și statele vecine, inclusiv România și românii, după cum a arătat jurnalista ucraineancă Victoria Kopenko, într-un material din Panorama despre cum colții nevăzuți ai războiului din Ucraina otrăvesc și ce e în jur. <a href="https://panorama.ro/razboi-ucraina-ecologie-poluare-impact-mediu-romania/" style="color:#B01E23">Într-un material din Panorama</a> despre cum colții nevăzuți ai războiului din Ucraina otrăvesc și ce e în jur.',
+            description: 'Exploziile și distrugerile provocate infrastructurii industriale eliberează substanțe chimice periculoase și particule fine în aer, sol și surse de apă. Ucrainenii sunt în pericol de a dezvolta probleme respiratorii, afecțiuni ale pielii și alte boli grave pe termen lung. Și nu doar ei. Afectate vor fi și statele vecine, inclusiv România și românii, după cum a arătat jurnalista ucraineancă Victoria Kopenko, <a href="https://panorama.ro/razboi-ucraina-ecologie-poluare-impact-mediu-romania/" style="color:#B01E23">într-un material din Panorama</a> despre cum colții nevăzuți ai războiului din Ucraina otrăvesc și ce e în jur.',
             overlayImage: 'people.gif',
             
             location: {
@@ -866,7 +904,7 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Particulele de <b style="color: #B01E23;">uraniu sărăcit</b>, mult mai mici decât leucocitele, pot traversa bariera hematoencefalică, afectând nervii olfactivi și procesele cognitive direct.',
+            description: 'Particulele de <b style="color: #B01E23;">uraniu sărăcit</b>, mult mai mici decât leucocitele, pot traversa bariera hemato-encefalică, afectând nervii olfactivi și procesele cognitive direct.',
             overlayImage: 'intoxicatieuraniu.png',
             location: {
                 center: [12.02595, 49.90885],
@@ -1128,7 +1166,7 @@ var config = {
             hidden: false,
             title: 'Înainte de izbucnirea conflictului', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Ucraina era renumită pentru fertilitatea solurilor sale, în special pentru <b style="color: #B01E23;">cernoziomuri,</b> care acoperă o mare parte din teritoriul național. Aceste soluri sunt bogate în <b style="color: #B01E23;">humus și nutrienți,</b> ceea ce a permis Ucrainei să aibă o producția agricolă impresionantă, cu un accent deosebit pe cereale. Ucraina nu doar că <b style="color: #B01E23;">își acoperea  nevoile interne de consum, dar era și unul dintre cei mai mari exportatori de cereale la nivel mondial.</b>',
+            description: 'Ucraina era renumită pentru fertilitatea solurilor sale, în special pentru <b style="color: #B01E23;">cernoziomuri,</b> care acoperă o mare parte din teritoriul național. Aceste soluri sunt bogate în <b style="color: #B01E23;">humus și nutrienți,</b> ceea ce a permis Ucrainei să aibă o producție agricolă impresionantă, cu un accent deosebit pe cereale. Ucraina nu doar că <b style="color: #B01E23;">își acoperea  nevoile interne de consum, dar era și unul dintre cei mai mari exportatori de cereale la nivel mondial.</b>',
             overlayImage: 'tractor.gif',
             showChart: false,
             location: {
@@ -1172,7 +1210,7 @@ var config = {
             hidden: false,
             title: 'După izbucnirea conflictului', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Conflictul a perturbat lanțurile de aprovizionare și a limitat accesul la piețele tradiționale, în timp ce infrastructura critică a fost adesea vizată.',
+            description: 'Conflictul a perturbat lanțurile de aprovizionare și a limitat accesul la piețele tradiționale, în timp ce infrastructura critică a fost adesea vizată de atacurile Rusiei.',
             overlayImage: 'agricultura.png',
             showChart: false,
             location: {
@@ -1224,7 +1262,7 @@ var config = {
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
             
-            description: 'Agricultura, care a fost odată coloana vertebrală a economiei Ucrainei, și mediul, crucial pentru sănătatea și bunăstarea populației, sunt acum serios compromise. Terenurile odată fertile sunt pustiite, iar ecosistemele distruse. Ucraina consumă în medie <b style="color: #B01E23;">110.000 de obuze de calibrul 155 mm pe lună</b>, a dezvăluit Oleksiy Reznikov, fostul ministru al Apărării din Ucraina, în Financial Times . Comparativ, Federația Rusă recurge la o utilizare și mai masivă a munițiilor, folosind aproximativ <b style="color: #B01E23;">440.000 de obuze de 155 mm în fiecare lună.</b>',
+            description: 'Agricultura, care a fost odată coloana vertebrală a economiei Ucrainei, și mediul, crucial pentru sănătatea și bunăstarea populației, sunt acum serios compromise. Terenurile odată fertile sunt pustiite, iar ecosistemele distruse. Ucraina consumă în medie <b style="color: #B01E23;">110.000 de obuze de calibrul 155 mm pe lună</b>, a dezvăluit Oleksiy Reznikov, fostul ministru al Apărării din Ucraina, în <a href="https://www.ft.com/content/75ee9701-aa93-4c5d-a1bc-7a51422280fd" style="color:#B01E23">Financial Times</a> . Comparativ, Federația Rusă recurge la o utilizare și mai masivă a munițiilor, folosind aproximativ <b style="color: #B01E23;">440.000 de obuze de 155 mm în fiecare lună.</b>',
             
             location: {
                 center: [31.2718321, 49.4871968],
@@ -1337,7 +1375,7 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Ploaia acidă  e provocată de activitățile toxice ale oamenilor. Războiul e una dintre ele. Este formată din <b style="color: #B01E23;">oxizi de sulf (SO₂)</b>, <b style="color: #B01E23;">dioxid de carbon (CO₂)</b>, și (<b style="color: #B01E23;">azot NOₓ</b>) emiși de explozii, care se transformă în atmosferă sub acțiunea soarelui și a oxigenului, având un impact devastator asupra mediului.',
+            description: 'Ploaia acidă  e provocată de activitățile toxice ale oamenilor. Războiul e una dintre ele. Este formată din <b style="color: #B01E23;">oxizi de sulf (SO₂)</b>, <b style="color: #B01E23;">dioxid de carbon (CO₂)</b> și (<b style="color: #B01E23;">azot NOₓ</b>) emiși de explozii, care se transformă în atmosferă sub acțiunea soarelui și a oxigenului, având un impact devastator asupra mediului.',
             overlayImage: 'generals.png',
             location: {
                 center: [12.02595, 49.90885],
@@ -1440,7 +1478,7 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Distrugerea habitatelor naturale, împreună cu poluarea chimică din sol, provocată de explozibili și metale grele, lasă în urmă un peisaj irecognoscibil. Orașele distruse reprezintă o amenințare ecologică suplimentară, cu bombe nedetonate, cu praf cancerigen care iese din  ruine și cu moloz care este foarte greu de reciclat.',
+            description: 'Distrugerea habitatelor naturale împreună cu poluarea chimică din sol, provocate de explozibili și metale grele, lasă în urmă un peisaj irecognoscibil. Orașele distruse reprezintă o amenințare ecologică suplimentară, cu bombe nedetonate, cu praf cancerigen care iese din  ruine și cu moloz care este foarte greu de reciclat.',
             overlayImage: 'sol.gif',
             location: {
                 center: [12.02595, 49.90885],
@@ -1541,7 +1579,7 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Zilnic, mii de obuze, care pot elibera între 1,6 și 3,5 kg de fragmente toxice fiecare, sunt folosite în zonele de conflict. Astfel, peste 651 kg de fragmente toxice se infiltrează zilnic în sol, provenind din carcase de muniție care includ, pe lângă alte elemente, sulf și cupru – metale cu potențial toxic semnificativ. ',
+            description: 'Zilnic, mii de obuze, <a href="https://panorama.ro/razboi-ucraina-ecologie-poluare-impact-mediu-romania/" style="color:#B01E23">care pot elibera între 1,6 și 3,5 kg de fragmente toxice fiecare</a>, sunt folosite în zonele de conflict. Astfel, peste 651 kg de fragmente toxice se infiltrează zilnic în sol, provenind din carcase de muniție care includ, pe lângă alte elemente, sulf și cupru – metale cu potențial toxic semnificativ. ',
             overlayImage: 'fragmente.gif',
             location: {
                 center: [12.02595, 49.90885],
