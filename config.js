@@ -10,7 +10,7 @@ var config = {
     theme: 'light',
     use3dTerrain: false, //set true for enabling 3D maps.
     auto: false,
-    title: '<span style="font-family:\'Signika\'; font-weight: 200; padding: 0.2vh; border-radius: 10px; color: #000000; font-size: 1.7rem; display: block; margin-bottom: 2px;">Marile răni ale Ucrainei,</span>',
+    title: '<span style="font-family:\'Signika\'; font-weight: 200; padding: 0.2vh; border-radius: 10px; color: #000000; font-size: 1.7rem; display: block; margin-bottom: 2px;">Marile răni</span>',
     subtitle: '<span style="font-family: \'Signika\'; color: #000000; font-size: 2.6rem; font-weight: 500;"> DUPĂ DOI ANI DE <span style="font-weight: bold; animation: colorFade 6s infinite;">RĂZBOI</span> ÎN UCRAINA </span>',
 
     byline: '<p style="text-align: center;"> <img src="./ukraine.gif"></p> <a href="https://panorama.ro/author/edit/" target="_blank">Edit Gyenge</a> <p> <img src="./scroll.png"> </p> <p> scroll </p> ',
@@ -56,11 +56,12 @@ var config = {
             daysAgo: 430,
             showTimeline: false,
             alignment: 'center',
+            mapStyle: 'mapbox://styles/ed1990/clst7lw1k00ak01qt0zyn8epd',
             hidden: false,
             title: '',
             image: '',
             description: 'Războiul a schimbat destinele a milioane de ucraineni, care fie au fugit unde au putut, fie au îndurat greutățile de acasă. Nu doar realitățile economice ale vieții din Ucraina s-au răsturnat peste noapte. Războiul a  scos la iveală și cât de fragilă e natura în fața conflictelor armate: apa, aerul și solul sunt otrăvite.',
-            overlayImage: 'blank.png',
+            overlayImage: '',
             
             location: {
                 center: [12.02595, 49.90885],
@@ -68,20 +69,26 @@ var config = {
                 pitch: 60,
                 bearing: 0,
             },
+            location: {
+                center: [31.2718321, 49.4871968],
+                zoom: 5,
+                pitch: 0,
+                bearing: 0,
+            },
             mapAnimation: 'jumpTo',
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
                 // {
-                //     layer: 'layer-name',
+                //     layer: 'data-driven-circles',
                 //     opacity: 1,
                 //     duration: 5000
                 // }
             ],
             onChapterExit: [
                 // {
-                //     layer: 'layer-name',
-                //     opacity: 0
+                //     layer: 'data-driven-circles',
+                //     opacity: 1
                 // }
             ]
         },
@@ -1262,7 +1269,7 @@ var config = {
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
             
-            description: 'Agricultura, care a fost odată coloana vertebrală a economiei Ucrainei, și mediul, crucial pentru sănătatea și bunăstarea populației, sunt acum serios compromise. Terenurile odată fertile sunt pustiite, iar ecosistemele distruse. Ucraina consumă în medie <b style="color: #B01E23;">110.000 de obuze de calibrul 155 mm pe lună</b>, a dezvăluit Oleksiy Reznikov, fostul ministru al Apărării din Ucraina, în <a href="https://www.ft.com/content/75ee9701-aa93-4c5d-a1bc-7a51422280fd" style="color:#B01E23">Financial Times</a> . Comparativ, Federația Rusă recurge la o utilizare și mai masivă a munițiilor, folosind aproximativ <b style="color: #B01E23;">440.000 de obuze de 155 mm în fiecare lună.</b>',
+            description: 'Agricultura, care a fost odată coloana vertebrală a economiei Ucrainei, și mediul, crucial pentru sănătatea și bunăstarea populației, sunt acum serios compromise. Terenurile odată fertile sunt pustiite, iar ecosistemele distruse. Ucraina consumă în medie <b style="color: #B01E23;">110.000 de obuze de calibrul 155 mm pe lună</b>, a dezvăluit Oleksiy Reznikov, fostul ministru al Apărării din Ucraina, în <a href="https://www.ft.com/content/75ee9701-aa93-4c5d-a1bc-7a51422280fd" style="color:#B01E23">Financial Times</a>. Comparativ, Federația Rusă recurge la o utilizare și mai masivă a munițiilor, folosind aproximativ <b style="color: #B01E23;">440.000 de obuze de 155 mm în fiecare lună.</b>',
             
             location: {
                 center: [31.2718321, 49.4871968],
@@ -1579,7 +1586,7 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Zilnic, mii de obuze, <a href="https://panorama.ro/razboi-ucraina-ecologie-poluare-impact-mediu-romania/" style="color:#B01E23">care pot elibera între 1,6 și 3,5 kg de fragmente toxice fiecare</a>, sunt folosite în zonele de conflict. Astfel, peste 651 kg de fragmente toxice se infiltrează zilnic în sol, provenind din carcase de muniție care includ, pe lângă alte elemente, sulf și cupru – metale cu potențial toxic semnificativ. ',
+            description: 'Zilnic, mii de obuze <a href="https://panorama.ro/razboi-ucraina-ecologie-poluare-impact-mediu-romania/" style="color:#B01E23">care pot elibera între 1,6 și 3,5 kg de fragmente toxice fiecare</a> sunt folosite în zonele de conflict. Astfel, peste 651 kg de fragmente toxice se infiltrează zilnic în sol, provenind din carcase de muniție care includ, pe lângă alte elemente, sulf și cupru – metale cu potențial toxic semnificativ. ',
             overlayImage: 'fragmente.gif',
             location: {
                 center: [12.02595, 49.90885],
