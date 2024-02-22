@@ -105,7 +105,42 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: '<b style="color: #B01E23;">Ziua de 24 februarie 2022</b> marchează începutul războiului. Deși toate semnele și avertismentele erau acolo, cei mai mulți, inclusiv ucraineni, ne spuneam: n-are cum. Pe hartă, apar conflictele de la începutul invaziei rusești până astăzi. Dimensiunea cercului reprezintă numărul de decese/zonă de conflict. Datele sunt preluate de la Armed Conflict Location & EventDataProject (ACLED), <a href="https://acleddata.com/" style="color:#B01E23">acleddata.com</a>, și se referă la evenimentele raportate până la date de 02.02.2024. <p><img id="legend-img" src="legenda.png" alt="Legend"></p>',
+            description: '<b style="color: #B01E23;">Ziua de 24 februarie 2022</b> marchează începutul războiului. Deși toate semnele și avertismentele erau acolo, cei mai mulți, inclusiv ucraineni, ne spuneam: n-are cum.',
+            
+            location: {
+                center: [31.2718321, 49.4871968],
+                zoom: 5,
+                pitch: 0,
+                bearing: 0,
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'data-driven-circles',
+                    opacity: 1,
+                    duration: 5000
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'data-driven-circles',
+                    opacity: 1
+                }
+            ]
+        },
+
+        {
+            id: 'cap6.1',
+            daysAgo: 730,
+            showTimeline: true,
+            mapStyle: 'mapbox://styles/ed1990/clshd5fko001d01qw5qk66k79',
+            alignment: 'center',
+            hidden: false,
+            title: '', // Consider adding a title if needed
+            image: '', // Specify if there's a header image for the chapter
+            description: 'Pe hartă, apar conflictele de la începutul invaziei rusești până astăzi. Dimensiunea cercului reprezintă numărul de decese/zonă de conflict. Datele sunt preluate de la Armed Conflict Location & EventDataProject (ACLED), <a href="https://acleddata.com/" style="color:#B01E23">acleddata.com</a>, și se referă la evenimentele raportate până la data de 02.02.2024. <p><img id="legend-img" src="legenda.png" alt="Legend"></p>',
             
             location: {
                 center: [31.2718321, 49.4871968],
@@ -271,7 +306,7 @@ var config = {
         },
         {
             id: 'cap10',
-            daysAgo: 20,
+            daysAgo: 22,
             showTimeline: true,
             mapStyle: 'mapbox://styles/ed1990/clsj06byl01z201r406bhe7cd',
             triggerCustomScroll: true,
@@ -707,7 +742,45 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Exploziile și distrugerile provocate infrastructurii industriale eliberează substanțe chimice periculoase și particule fine în aer, sol și surse de apă. Ucrainenii sunt în pericol de a dezvolta probleme respiratorii, afecțiuni ale pielii și alte boli grave pe termen lung. Și nu doar ei. Afectate vor fi și statele vecine, inclusiv România și românii, după cum a arătat jurnalista ucraineancă Victoria Kopenko, <a href="https://panorama.ro/razboi-ucraina-ecologie-poluare-impact-mediu-romania/" style="color:#B01E23">într-un material din Panorama</a> despre cum colții nevăzuți ai războiului din Ucraina otrăvesc și ce e în jur.',
+            description: 'Exploziile și distrugerile provocate infrastructurii industriale eliberează substanțe chimice periculoase și particule fine în aer, sol și surse de apă. Ucrainenii sunt în pericol de a dezvolta probleme respiratorii, afecțiuni ale pielii și alte boli grave pe termen lung. Și nu doar ei.',
+            overlayImage: 'people.gif',
+            
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 1,
+                pitch: 60,
+                bearing: 0,
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ],
+            
+        },
+
+
+        {
+            id: 'cap3.7',
+            daysAgo: 30,
+            showTimeline: false,
+            timelineImage: 'chart1.png', 
+            alignment: 'center',
+            hidden: false,
+            title: '', // Consider adding a title if needed
+            image: '', // Specify if there's a header image for the chapter
+            description: 'Afectate vor fi și statele vecine, inclusiv România și românii, după cum a arătat jurnalista ucraineancă Victoria Kopenko, <a href="https://panorama.ro/razboi-ucraina-ecologie-poluare-impact-mediu-romania/" style="color:#B01E23">într-un material din Panorama</a> despre cum colții nevăzuți ai războiului din Ucraina otrăvesc și ce e în jur.',
             overlayImage: 'people.gif',
             
             location: {
@@ -1416,7 +1489,7 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Mișcarea verticală a acestor componente acide este limitată de structura atmosferei și de distribuția verticală a temperaturii. Potrivit articolelor de specialitate, datele săptămânale dinainte și după începerea războiului arată o încărcare puternică a aerului cu <b style="color: #B01E23;"><a href="https://www.mdpi.com/2071-1050/14/21/13832#metrics" style="color:#B01E23">dioxid de sulf SO2 și PM2.5 (particule fine poluante)</a></b>. ',
+            description: 'Mișcarea verticală a acestor componente acide este limitată de structura atmosferei și de distribuția verticală a temperaturii. Potrivit articolelor de specialitate, datele săptămânale dinainte și după începerea războiului arată o încărcare puternică a aerului cu <b style="color: #B01E23;"><a href="https://www.mdpi.com/2071-1050/14/21/13832#metrics" style="color:#B01E23">dioxid de sulf SO2 și PM2.5 (particule fine poluante)</a></b>. <em>Imagine: Concentrații ale poluanților din aer în Ucraina, în perioada 2019–2022. Sursa: MDPI.com</em>',
             overlayImage: 'poluareaer.png',
             location: {
                 center: [12.02595, 49.90885],
@@ -1653,7 +1726,41 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Un exemplu elocvent al impactului pe termen lung sunt minele neexplodate și uriașa misiune de deminare care așteaptă Ucraina, după război. Conform unor estimări citate de <a href="https://www.washingtonpost.com/world/2023/07/22/ukraine-is-now-most-mined-country-it-will-take-decades-make-safe/" style="color:#B01E23">Washington Post,</a> dacă 500 de echipe de săpători sunt mobilizate pentru această misiune, ar dura <b style="color: #B01E23;">757 de ani pentru a curăța teritoriul Ucrainei de minele</b> lăsate în urma conflictului inițiat de Rusia. Cea mai recentă estimare a instituțiilor internaționale și a guvernului de la Kiev arată că reconstrucția Ucrainei după război ar costa <b style="color: #B01E23;">486 de miliarde de dolari.</b> Familiile ucrainene au de luptat nu doar în acest război, ci vor avea pe generații de acum încolo.  ',
+            description: 'Un exemplu elocvent al impactului pe termen lung sunt minele neexplodate și uriașa misiune de deminare care așteaptă Ucraina, după război. Conform unor estimări citate de <a href="https://www.washingtonpost.com/world/2023/07/22/ukraine-is-now-most-mined-country-it-will-take-decades-make-safe/" style="color:#B01E23">Washington Post,</a> dacă 500 de echipe de săpători sunt mobilizate pentru această misiune, ar dura <b style="color: #B01E23;">757 de ani pentru a curăța teritoriul Ucrainei de minele</b> lăsate în urma conflictului inițiat de Rusia. ',
+            overlayImage: 'generalss.png',
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 1,
+                pitch: 60,
+                bearing: 0,
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+
+        {
+            id: 'cap30',
+            daysAgo: 100,
+            showTimeline: false,
+            alignment: 'center',
+            hidden: false,
+            title: '', // Consider adding a title if needed
+            image: '', // Specify if there's a header image for the chapter
+            description: 'Cea mai recentă estimare a instituțiilor internaționale și a guvernului de la Kiev arată că reconstrucția Ucrainei după război ar costa <b style="color: #B01E23;">486 de miliarde de dolari.</b> Familiile ucrainene au de luptat nu doar în acest război, ci vor avea pe generații de acum încolo.  ',
             overlayImage: 'generalss.png',
             location: {
                 center: [12.02595, 49.90885],
