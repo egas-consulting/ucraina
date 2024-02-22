@@ -13,8 +13,8 @@ var config = {
     title: '<span style="font-family:\'Signika\'; font-weight: 200; padding: 0.2vh; border-radius: 10px; color: #000000; font-size: 1.7rem; display: block; margin-bottom: 2px;">Marile răni</span>',
     subtitle: '<span style="font-family: \'Signika\'; color: #000000; font-size: 2.6rem; font-weight: 500;"> DUPĂ DOI ANI DE <span style="font-weight: bold; animation: colorFade 6s infinite;">RĂZBOI</span> ÎN UCRAINA </span>',
 
-    byline: '<p style="text-align: center;"> <img src="./ukraine.gif"></p> <a href="https://panorama.ro/author/edit/" target="_blank">Edit Gyenge</a> <p> <img src="./scroll.png"> </p> <p> scroll </p> ',
-    footer: '<br> 24 februarie 2024 <br> <a href="https://panorama.ro/author/andrei-luca-popescu/" target="_blank">Editor: Andrei Luca Popescu</a> <br> Sursa datelor: informații obținute cu sprijinul Victoriei Kopenko <a href="https://panorama.ro/razboi-ucraina-ecologie-poluare-impact-mediu-romania/" target="_blank">pentru materialul publicat în Panorama,</a> <a href="https://ces.org.ua/en/tracker-economy-during-the-war/" target="_blank">Centre for Economic Strategy</a>, <a href="https://uncg.org.ua/iakoiu-maie-buty-dolia-poshkodzhenykh-vybukhamy-ukrainskykh-terytorij/" target="_blank">Ukranian Nature Conservation Group</a>, <a href="https://www.ft.com/content/75ee9701-aa93-4c5d-a1bc-7a51422280fd" target="_blank">Financial Times</a>, <a href="https://www.washingtonpost.com/world/2023/07/22/ukraine-is-now-most-mined-country-it-will-take-decades-make-safe/" target="_blank">Washington Post</a>, <a href="https://acleddata.com/ukraine-conflict-monitor/#dash" target="_blank">ACLED</a>, <a href="https://www.mdpi.com/2071-1050/14/21/13832#metrics" target="_blank">Zalakeviciute, R.; Mejia, D.; Alvarez, H.; Bermeo, X.; Bonilla-Bedoya, S.; Rybarczyk, Y.; Lamb, B. War Impact on Air Quality in Ukraine. Sustainability 2022, 14, 13832. https://doi.org/10.3390/su142113832</a>, <a href="https://www.worldbank.org/en/country/ukraine" target="_blank">World Bank</a>,<br> Creat folosind <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox </a> <p>Ilustrația este făcută cu Microsoft Bing Image creator</p>',
+    byline: '<p class="centered-container"> <img src="./ukraine.gif" class="responsive-img"> </p> <a href="https://panorama.ro/author/edit/" target="_blank">Edit Gyenge</a> <p> <img src="./scroll.png"> </p> <p> scroll </p> ',
+    footer: '<br> 24 februarie 2024 <br> <a href="https://panorama.ro/author/andrei-luca-popescu/" target="_blank">Editor: Andrei Luca Popescu</a> <br> Sursa datelor: informații obținute cu sprijinul Victoriei Kopenko <a href="https://panorama.ro/razboi-ucraina-ecologie-poluare-impact-mediu-romania/" target="_blank">pentru materialul publicat în Panorama,</a> <a href="https://ces.org.ua/en/tracker-economy-during-the-war/" target="_blank">Centre for Economic Strategy</a>, <a href="https://acleddata.com/">Armed Conflict Location & EventDataProject (ACLED), acleddata.com, </a><a href="https://uncg.org.ua/iakoiu-maie-buty-dolia-poshkodzhenykh-vybukhamy-ukrainskykh-terytorij/" target="_blank">Ukranian Nature Conservation Group</a>, <a href="https://www.ft.com/content/75ee9701-aa93-4c5d-a1bc-7a51422280fd" target="_blank">Financial Times</a>, <a href="https://www.washingtonpost.com/world/2023/07/22/ukraine-is-now-most-mined-country-it-will-take-decades-make-safe/" target="_blank">Washington Post</a>, <a href="https://wwfcee.org/our-offices/ukraine/assessing-the-environmental-impacts-of-the-war-in-ukraine" target="_blank">WWF</a>, <a href="https://www.bbc.com/future/article/20230221-the-toxic-legacy-of-the-ukraine-war" target="_blank">BBC</a>, <a href="https://www.worldbank.org/en/country/ukraine" target="_blank">World Bank</a>, Studii: <a href="https://www.mdpi.com/2071-1050/14/21/13832#metrics" target="_blank">Zalakeviciute, R.; Mejia, D.; Alvarez, H.; Bermeo, X.; Bonilla-Bedoya, S.; Rybarczyk, Y.; Lamb, B. War Impact on Air Quality in Ukraine. Sustainability 2022, 14, 13832. https://doi.org/10.3390/su142113832</a>, <a href="https://www.nature.com/articles/s41893-023-01068-x#citeas" target="_blank">Shumilova, O., Tockner, K., Sukhodolov, A. et al. Impact of the Russia–Ukraine armed conflict on water resources and water infrastructure. Nat Sustain 6, 578–586 (2023). https://doi.org/10.1038/s41893-023-01068-x</a> <br> Creat folosind <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox </a> <p>Ilustrația este generată cu Microsoft Bing Image creator și prelucrată</p>',
     chapters: [
         {
             id: 'cap1',
@@ -105,7 +105,7 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: '<b style="color: #B01E23;">Ziua de 24 februarie 2022</b> marchează începutul războiului. Deși toate semnele și avertismentele erau acolo, cei mai mulți, inclusiv ucraineni, ne spuneam: n-are cum. Pe hartă, apar ciocnirile armate de la începutul invaziei rusești până astăzi. Dimensiunea cercului reprezintă numărul de decese/zonă de conflict. <p><img src="legenda.png" alt="Legend" style="max-width: 50%; height: auto;"></p> ',
+            description: '<b style="color: #B01E23;">Ziua de 24 februarie 2022</b> marchează începutul războiului. Deși toate semnele și avertismentele erau acolo, cei mai mulți, inclusiv ucraineni, ne spuneam: n-are cum. Pe hartă, apar conflictele de la începutul invaziei rusești până astăzi. Dimensiunea cercului reprezintă numărul de decese/zonă de conflict. Datele sunt preluate de la Armed Conflict Location & EventDataProject (ACLED), <a href="https://acleddata.com/" style="color:#B01E23">acleddata.com</a>, și se referă la evenimentele raportate până la date de 02.02.2024. <p><img id="legend-img" src="legenda.png" alt="Legend"></p>',
             
             location: {
                 center: [31.2718321, 49.4871968],
@@ -271,7 +271,7 @@ var config = {
         },
         {
             id: 'cap10',
-            daysAgo: 7,
+            daysAgo: 20,
             showTimeline: true,
             mapStyle: 'mapbox://styles/ed1990/clsj06byl01z201r406bhe7cd',
             triggerCustomScroll: true,
@@ -317,7 +317,7 @@ var config = {
             hidden: false,
             title: '<h1 class="title">Înainte de conflict</h1>', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Înainte de izbucnirea conflictului, adică <b style="color: #B01E23;">acum mai bine de 730</b> de zile, familia medie din Ucraina se confrunta și așa cu greutăți economice, dar avea și momente de stabilitate și speranță. În ultimul deceniu, rata șomajului în Ucraina nu a depășit 10%. În ianuarie 2022, rata șomajului era de <b style="color: #B01E23;">10,5%</b>.',
+            description: 'Înainte de izbucnirea conflictului, adică <b style="color: #B01E23;">acum mai bine de 730</b> de zile, familia medie din Ucraina se confrunta și așa cu greutăți economice, dar avea și momente de stabilitate și speranță. În ultimul deceniu, rata șomajului în Ucraina <a href="https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=UA" style="color:#B01E23">nu a depășit 10%</a>. În ianuarie 2022, rata șomajului era de <b style="color: #B01E23;"><a href="https://ces.org.ua/en/tracker-economy-during-the-war/" style="color:#B01E23">10%</a></b>.',
             overlayImage: 'familie.gif',
             
             location: {
@@ -344,13 +344,13 @@ var config = {
             ],
             chartData: {
                 labels: ['Ian 2022', 'Feb', 'Mar', 'Apr', 'Mai', 'Iun', 'Iul', 'Aug', 'Sep', 'Oct', 'Noi', 'Dec', 'Ian 2023', 'Feb', 'Mar', 'Apr', 'Mai', 'Iun', 'Iul', 'Aug', 'Sep', 'Oct', 'Noi', 'Dec', 'Ian 2024'],
-                label: 'Dataset 1',
+                label: 'Rata șomajului (%)',
                 dataPoints: [10.5, 8.6, null, null]
             
             },
             yAxisMin: 0, // Customize minimum value for y-axis
             yAxisMax: 35,
-            chartTitle: 'Rata șomajului', // Customize maximum value for y-axis
+            chartTitle: 'Evoluția ratei șomajului (Date: Center for Economic Strategy)', // Customize maximum value for y-axis
         
         
         },
@@ -364,7 +364,7 @@ var config = {
             hidden: false,
             title: '<h1 class="title">După izbucnirea conflictului</h1>', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'După prima lună de război, rata șomajului a atins cote record, de <b style="color: #B01E23;">29,5%.</b>',
+            description: 'După prima lună de război, rata șomajului a atins cote record, de <b style="color: #B01E23;"><a href="https://ces.org.ua/en/tracker-economy-during-the-war/" style="color:#B01E23">29,5%.</a></b>',
             overlayImage: 'army.gif',           
             location: {
                 center: [12.02595, 49.90885],
@@ -390,13 +390,13 @@ var config = {
             ],
             chartData: {
                 labels: ['Ian 2022', 'Feb', 'Mar', 'Apr', 'Mai', 'Iun', 'Iul', 'Aug', 'Sep', 'Oct', 'Noi', 'Dec', 'Ian 2023', 'Feb', 'Mar', 'Apr', 'Mai', 'Iun', 'Iul', 'Aug', 'Sep', 'Oct', 'Noi', 'Dec', 'Ian 2024'],
-                label: 'Dataset 1',
+                label: 'Rata șomajului (%)',
                 dataPoints: [10.5, 8.6, 29.5, null],
                 
             },
             yAxisMin: 0, // Customize minimum value for y-axis
             yAxisMax: 35,
-            chartTitle: 'Rata șomajului',
+            chartTitle: 'Evoluția ratei șomajului (Date: Center for Economic Strategy)',
         },
 
         {
@@ -408,7 +408,7 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'În cei doi ani de conflict, rata șomajului a rămas constant <b style="color: #B01E23;">peste 15%,</b> dar au fost luni și cu <b style="color: #B01E23;">peste 30%.</b> ',
+            description: 'În cei doi ani de conflict, rata șomajului a rămas constant <b style="color: #B01E23;">peste 15%,</b> dar au fost luni și cu <b style="color: #B01E23;">peste 30%.</b> Click pe grafic pentru detalii. ',
             overlayImage: 'army.gif',           
             location: {
                 center: [12.02595, 49.90885],
@@ -434,13 +434,13 @@ var config = {
             ],
             chartData: {
                 labels: ['Ian 2022', 'Feb', 'Mar', 'Apr', 'Mai', 'Iun', 'Iul', 'Aug', 'Sep', 'Oct', 'Noi', 'Dec', 'Ian 2023', 'Feb', 'Mar', 'Apr', 'Mai', 'Iun', 'Iul', 'Aug', 'Sep', 'Oct', 'Noi', 'Dec', 'Ian 2024'],
-                label: '',
+                label: 'Rata șomajului (%)',
                 dataPoints: [10.5, 8.6, 29.5, 27.2, 30.7, 26, 28.2, 26, 21.5,22.9, 19.7, 22.3, 21.6, 24.2, 20.5, 20.8, 17.7, 21.4, 16.6, 15.1, 15.9, 18.4, 20, 16.1, 17 ],
                 
             },
             yAxisMin: 0, // Customize minimum value for y-axis
             yAxisMax: 35,
-            chartTitle: 'Rata șomajului',
+            chartTitle: 'Evoluția ratei șomajului (Date: Center for Economic Strategy)',
         },
 
 
@@ -483,14 +483,14 @@ var config = {
 
         {
             id: 'cap3.1',
-            daysAgo: 731,
+            daysAgo: 760,
             showTimeline: true,
             timelineImage: 'chart1.png', 
             alignment: 'center',
             hidden: false,
-            title: '', // Consider adding a title if needed
+            title: '<h1 class="title">Înainte de conflict</h1>', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Foamea e un indicator cât se poate de bază pentru viața unui om. Înainte de izbucnirea războiului, lipsa siguranței alimentare, măsurată în procentul celor care au declarat că sunt forțați să-și economisească mâncarea, pentru a le ajunge pentru o perioadă mai lungă, era <b style="color: #B01E23;">între 10 și 15%</b> în Ucraina.',
+            description: 'Foamea e un indicator cât se poate de bază pentru viața unui om. Înainte de izbucnirea războiului, lipsa siguranței alimentare, măsurată în procentul celor care au declarat că sunt forțați să-și economisească mâncarea, pentru a le ajunge pentru o perioadă mai lungă, era <b style="color: #B01E23;"><a href="https://ces.org.ua/en/tracker-economy-during-the-war/" style="color:#B01E23">între 10 și 15%</a></b> în Ucraina.',
             overlayImage: 'social.png',
             
             location: {
@@ -517,13 +517,13 @@ var config = {
             ],
             chartData: {
                 labels: ['Ian 2022', 'Feb', 'Mar', 'Apr', 'Mai', 'Iun', 'Iul', 'Aug', 'Sep', 'Oct', 'Noi', 'Dec', 'Ian 2023', 'Feb', 'Mar', 'Apr', 'Mai', 'Iun', 'Iul', 'Aug', 'Sep', 'Oct', 'Noi', 'Dec', 'Ian 2024'],
-                label: '',
+                label: '(%)',
                 dataPoints: [15.9, 11.4, ],
                 
             },
             yAxisMin: 0, // Customize minimum value for y-axis
             yAxisMax: 35,
-            chartTitle: '% celor care au declarat că raționalizează mâncarea',
+            chartTitle: '% celor care au declarat că raționalizează mâncarea (Date: Center for Economic Strategy)',
         },
 
         {
@@ -533,7 +533,7 @@ var config = {
             timelineImage: 'chart1.png', 
             alignment: 'center',
             hidden: false,
-            title: '', // Consider adding a title if needed
+            title: '<h1 class="title">După izbucnirea conflictului</h1>', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
             description: 'În primele 3 luni de război, numărul ucrainenilor aflați în situația de a-și drămui mâncarea s-a dublat: procentul a urcat la <b style="color: #B01E23;">peste 30%.</b>',
             overlayImage: 'people.gif',
@@ -562,13 +562,13 @@ var config = {
             ],
             chartData: {
                 labels: ['Ian 2022', 'Feb', 'Mar', 'Apr', 'Mai', 'Iun', 'Iul', 'Aug', 'Sep', 'Oct', 'Noi', 'Dec', 'Ian 2023', 'Feb', 'Mar', 'Apr', 'Mai', 'Iun', 'Iul', 'Aug', 'Sep', 'Oct', 'Noi', 'Dec', 'Ian 2024'],
-                label: '',
+                label: '(%)',
                 dataPoints: [15.9, 11.4, 22.1, 22.8, 30.3, ],
                 
             },
             yAxisMin: 0, // Customize minimum value for y-axis
             yAxisMax: 35,
-            chartTitle: '% celor care au declarat că raționalizează mâncarea',
+            chartTitle: '% celor care au declarat că raționalizează mâncarea (Date: Center for Economic Strategy)',
         },
 
         {
@@ -580,7 +580,7 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Astăzi, doi ani mai târziu, <b style="color: #B01E23;">aproape 20%</b> dintre ei își împart alimentele cu grijă. Știu că vor veni mereu zile în care nu vor avea de unde sau cu ce să-și ia de mâncare.',
+            description: 'Astăzi, doi ani mai târziu, <b style="color: #B01E23;">aproape 20%</b> dintre ei își împart alimentele cu grijă. Știu că vor veni mereu zile în care nu vor avea de unde sau cu ce să-și ia de mâncare. Click pe grafic pentru detalii.',
             overlayImage: 'people.gif',
             
             location: {
@@ -607,13 +607,13 @@ var config = {
             ],
             chartData: {
                 labels: ['Ian 2022', 'Feb', 'Mar', 'Apr', 'Mai', 'Iun', 'Iul', 'Aug', 'Sep', 'Oct', 'Noi', 'Dec', 'Ian 2023', 'Feb', 'Mar', 'Apr', 'Mai', 'Iun', 'Iul', 'Aug', 'Sep', 'Oct', 'Noi', 'Dec', 'Ian 2024'],
-                label: '',
+                label: '(%)',
                 dataPoints: [15.9, 11.4, 22.1, 22.8, 30.3, 26.6, 26.7, 22.2, 19.4, 21.9, 21.7, 22.7, 19, 22, 24.1, 20, 22.9, 26.4, 23, 20.8, 24.7, 21.5, 17.7, 23.1, 19.2,],
                 
             },
             yAxisMin: 0, // Customize minimum value for y-axis
             yAxisMax: 35,
-            chartTitle: '% celor care au declarat că raționalizează mâncarea',
+            chartTitle: '% celor care au declarat că raționalizează mâncarea (Date: Center for Economic Strategy)',
         },
 
         {
@@ -652,13 +652,13 @@ var config = {
             ],
             chartData: {
                 labels: ['Ian 2022', 'Feb', 'Mar', 'Apr', 'Mai', 'Iun', 'Iul', 'Aug', 'Sep', 'Oct', 'Noi', 'Dec', 'Ian 2023', 'Feb', 'Mar', 'Apr', 'Mai', 'Iun', 'Iul', 'Aug', 'Sep', 'Oct', 'Noi', 'Dec', 'Ian 2024'],
-                label: '',
+                label: 'Indicele prețurilor de consum (%)',
                 dataPoints: [10, 10.7, 13.7, 16.4, 18, 21.5, 22.2, 23.8, 24.6, 26.6, 26.5, 26, 24.9, 21.3, 17.9, 15.3, 12.8, 11.3, 8.6, 7.1, 5.3, 5.1, 5.1, 4.7 ],
                 
             },
             yAxisMin: 0, // Customize minimum value for y-axis
             yAxisMax: 35,
-            chartTitle: 'Indicele prețurilor de consum (%)',
+            chartTitle: 'Evoluția indicelui prețurilor de consum (%) (Date: Center for Economic Strategy)',
         },
 
         {
@@ -1050,7 +1050,7 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Microparticulele rezultate din distrugerea proiectilelor de muniție pătrund în corpul oamenilor și animalelor prin <b style="color: #B01E23;">apă, aer și sol</b>.',
+            description: 'Microparticulele rezultate din distrugerea proiectilelor de muniție pătrund în corpul oamenilor și animalelor prin <b style="color: #B01E23;"><a href="https://www.bbc.com/future/article/20230221-the-toxic-legacy-of-the-ukraine-war" style="color:#B01E23">apă, aer și sol</a></b>.',
             overlayImage: 'general.png',
             location: {
                 center: [12.02595, 49.90885],
@@ -1099,9 +1099,9 @@ var config = {
             showTimeline: false,
             alignment: 'center',
             hidden: false,
-            title: 'Înainte de conflict', // Consider adding a title if needed
+            title: '<h1 class="title">Înainte de conflict</h1>', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Ucraina adăpostea <b style="color: #B01E23;">peste 70 de mii de specii de floră și faună</b>, reprezentând mai mult de 35% din biodiversitatea Europei. Parcurile naționale și rezervațiile din Ucraina fac parte dintr-un lanț pan-european de situri protejate, numit „Rețeaua Emerald”, care adăpostesc multe specii pe cale de dispariție.',
+            description: 'Ucraina adăpostea <b style="color: #B01E23;"><a href="https://en.wikipedia.org/wiki/Environmental_impact_of_the_Russian_invasion_of_Ukraine" style="color:#B01E23">peste 70 de mii de specii de floră și faună</a></b>, reprezentând mai mult de 35% din biodiversitatea Europei. Parcurile naționale și rezervațiile din Ucraina fac parte dintr-un lanț pan-european de situri protejate, numit „Rețeaua Emerald”, care adăpostesc multe specii pe cale de dispariție.',
             overlayImage: 'nature.gif',
             
             location: {
@@ -1135,9 +1135,9 @@ var config = {
             showTimeline: false,
             alignment: 'center',
             hidden: false,
-            title: 'După izbucnirea conflictului', // Consider adding a title if needed
+            title: '<h1 class="title">După izbucnirea conflictului</h1>', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Evaluări intermediare indică faptul că mai bine de o treime din siturile protejate din Ucraina au fost afectate de război. Conform Societății de Conservare a Naturii din Ucraina, <b style="color: #B01E23;">peste 44%</b> din cele mai valoroase zone naturale ale Ucrainei sunt afectate de conflictul armat.',
+            description: 'Evaluări intermediare indică faptul că mai bine de o treime din siturile protejate din Ucraina au fost afectate de război. Conform Societății de Conservare a Naturii din Ucraina, <b style="color: #B01E23;"><a href="https://uncg.org.ua/en/most-valuable-natural-areas-of-ukraine-covered-by-war/" style="color:#B01E23">peste 44%</a></b> din cele mai valoroase zone naturale ale Ucrainei sunt afectate de conflictul armat.',
             overlayImage: 'sol.gif',
             
             location: {
@@ -1167,11 +1167,11 @@ var config = {
 
         {
             id: 'cap5',
-            daysAgo: 731,
+            daysAgo: 760,
             showTimeline: true,
             alignment: 'center',
             hidden: false,
-            title: 'Înainte de izbucnirea conflictului', // Consider adding a title if needed
+            title: '<h1 class="title">Înainte de conflict</h1>', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
             description: 'Ucraina era renumită pentru fertilitatea solurilor sale, în special pentru <b style="color: #B01E23;">cernoziomuri,</b> care acoperă o mare parte din teritoriul național. Aceste soluri sunt bogate în <b style="color: #B01E23;">humus și nutrienți,</b> ceea ce a permis Ucrainei să aibă o producție agricolă impresionantă, cu un accent deosebit pe cereale. Ucraina nu doar că <b style="color: #B01E23;">își acoperea  nevoile interne de consum, dar era și unul dintre cei mai mari exportatori de cereale la nivel mondial.</b>',
             overlayImage: 'tractor.gif',
@@ -1206,7 +1206,7 @@ var config = {
             },
             yAxisMin: 0, // Customize minimum value for y-axis
             yAxisMax: 7,
-            chartTitle: 'Evoluția lunară a exporturilor de cereale din Ucraina (milioane tone)',
+            chartTitle: 'Evoluția lunară a exporturilor de cereale din Ucraina (milioane tone) (Date: Center for Economic Strategy)',
         },
 
         {
@@ -1215,9 +1215,9 @@ var config = {
             showTimeline: true,
             alignment: 'center',
             hidden: false,
-            title: 'După izbucnirea conflictului', // Consider adding a title if needed
+            title: '<h1 class="title">După izbucnirea conflictului</h1>', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Conflictul a perturbat lanțurile de aprovizionare și a limitat accesul la piețele tradiționale, în timp ce infrastructura critică a fost adesea vizată de atacurile Rusiei.',
+            description: 'Conflictul a perturbat lanțurile de aprovizionare și a limitat accesul la piețele tradiționale, în timp ce infrastructura critică a fost adesea vizată de atacurile Rusiei. Click pe grafic pentru detalii.',
             overlayImage: 'agricultura.png',
             showChart: false,
             location: {
@@ -1250,7 +1250,7 @@ var config = {
             },
             yAxisMin: 0, // Customize minimum value for y-axis
             yAxisMax: 7,
-            chartTitle: 'Evoluția lunară a exporturilor de cereale din Ucraina (milioane tone)',
+            chartTitle: 'Evoluția lunară a exporturilor de cereale din Ucraina (milioane tone) (Date: Center for Economic Strategy)',
         },
 
 
@@ -1341,7 +1341,7 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'După primele 4 luni de război, luptele au afectat grav apa. <b style="color: #B01E23;">Cercurile portocalii de pe hartă sunt incidentele raportate, de afectare a resurselor de apă. </b>Produsele petroliere și substanțele pe bază de azot se acumulează persistent în apele subterane. De asemenea, aceste zone sunt adesea poluate cu metale toxice, inclusiv plumb, cadmiu și crom.',
+            description: 'După primele 4 luni de război, luptele au afectat grav apa. <b style="color: #B01E23;"><a href="https://www.nature.com/articles/s41893-023-01068-x#Sec14" style="color:#B01E23">Cercurile portocalii de pe hartă sunt incidentele raportate, de afectare a resurselor de apă. </a></b>Produsele petroliere și substanțele pe bază de azot se acumulează persistent în apele subterane. De asemenea, aceste zone sunt adesea poluate cu metale toxice, inclusiv plumb, cadmiu și crom.',
             
             location: {
                 center: [31.2718321, 49.4871968],
@@ -1416,7 +1416,7 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Mișcarea verticală a acestor componente acide este limitată de structura atmosferei și de distribuția verticală a temperaturii. Potrivit articolelor de specialitate, datele săptămânale dinainte și după începerea războiului arată o încărcare puternică a aerului cu <b style="color: #B01E23;">dioxid de sulf SO2 și PM2.5 (particule fine poluante)</b>. ',
+            description: 'Mișcarea verticală a acestor componente acide este limitată de structura atmosferei și de distribuția verticală a temperaturii. Potrivit articolelor de specialitate, datele săptămânale dinainte și după începerea războiului arată o încărcare puternică a aerului cu <b style="color: #B01E23;"><a href="https://www.mdpi.com/2071-1050/14/21/13832#metrics" style="color:#B01E23">dioxid de sulf SO2 și PM2.5 (particule fine poluante)</a></b>. ',
             overlayImage: 'poluareaer.png',
             location: {
                 center: [12.02595, 49.90885],
@@ -1451,7 +1451,7 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Războiul din Ucraina nu numai că a transformat unele dintre cele mai fertile soluri ale lumii într-un dezastru ecologic, dar a devastat și rezervațiile naturale și biodiversitatea. Peste 12.000 de kilometri pătrați de arii protejate au devenit zone de conflict armat.',
+            description: 'Războiul din Ucraina nu numai că a transformat unele dintre cele mai fertile soluri ale lumii într-un dezastru ecologic, dar a devastat și rezervațiile naturale și biodiversitatea. <a href="https://wwfcee.org/our-offices/ukraine/assessing-the-environmental-impacts-of-the-war-in-ukraine" style="color:#B01E23">Peste 12.000 de kilometri pătrați de arii protejate</a> au devenit zone de conflict armat.',
             overlayImage: 'sol.gif',
             location: {
                 center: [12.02595, 49.90885],
@@ -1653,7 +1653,7 @@ var config = {
             hidden: false,
             title: '', // Consider adding a title if needed
             image: '', // Specify if there's a header image for the chapter
-            description: 'Un exemplu elocvent al impactului pe termen lung sunt minele neexplodate și uriașa misiune de deminare care așteaptă Ucraina, după război. Conform unor estimări citate de Washington Post, dacă 500 de echipe de săpători sunt mobilizate pentru această misiune, ar dura <b style="color: #B01E23;">757 de ani pentru a curăța teritoriul Ucrainei de minele</b> lăsate în urma conflictului inițiat de Rusia. Cea mai recentă estimare a instituțiilor internaționale și a guvernului de la Kiev arată că reconstrucția Ucrainei după război ar costa <b style="color: #B01E23;">486 de miliarde de dolari.</b> Familiile ucrainene au de luptat nu doar în acest război, ci vor avea pe generații de acum încolo.  ',
+            description: 'Un exemplu elocvent al impactului pe termen lung sunt minele neexplodate și uriașa misiune de deminare care așteaptă Ucraina, după război. Conform unor estimări citate de <a href="https://www.washingtonpost.com/world/2023/07/22/ukraine-is-now-most-mined-country-it-will-take-decades-make-safe/" style="color:#B01E23">Washington Post,</a> dacă 500 de echipe de săpători sunt mobilizate pentru această misiune, ar dura <b style="color: #B01E23;">757 de ani pentru a curăța teritoriul Ucrainei de minele</b> lăsate în urma conflictului inițiat de Rusia. Cea mai recentă estimare a instituțiilor internaționale și a guvernului de la Kiev arată că reconstrucția Ucrainei după război ar costa <b style="color: #B01E23;">486 de miliarde de dolari.</b> Familiile ucrainene au de luptat nu doar în acest război, ci vor avea pe generații de acum încolo.  ',
             overlayImage: 'generalss.png',
             location: {
                 center: [12.02595, 49.90885],
